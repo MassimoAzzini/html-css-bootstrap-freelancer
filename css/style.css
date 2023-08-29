@@ -1,6 +1,7 @@
 :root {
   --dark-gray: #2c3e50;
   --acquamarine: #1abc9c;
+  --dark-blue: #3a546d;
 }
 
 .debug {
@@ -29,4 +30,12 @@ main section:nth-child(odd) {
   width: 70%;
   max-width: 980px;
   margin: 0 auto;
+}
+
+footer .footer-top {
+  background-color: var(--dark-blue);
+}
+
+footer .footer-bottom {
+  background-color: var(--dark-gray);
 }
