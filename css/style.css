@@ -19,8 +19,14 @@ main section:nth-child(odd) {
   color: white;
 }
 
-.container-cst-small {
+.container-jumbotron {
   width: 100%;
   max-width: 600px;
+  margin: 0 auto;
+}
+
+.container-cst {
+  width: 70%;
+  max-width: 980px;
   margin: 0 auto;
 }
