@@ -1,0 +1,8 @@
+:root {
+  --dark-gray: #2c3e50;
+}
+
+header {
+  height: 90px;
+  background-color: var(--dark-gray);
+}
