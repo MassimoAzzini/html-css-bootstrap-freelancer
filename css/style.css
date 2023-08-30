@@ -24,6 +24,10 @@ h1 {
   font-size: 2rem;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 /* star */
 .star i {
   font-size: 1.5rem;
@@ -71,6 +75,11 @@ h1 {
 #contact-me .line-star {
   background-color: var(--dark-gray);
 }
+
+#portfolio .star,
+#contact-me .star {
+  color: var(--dark-gray);
+}
 /* end star */
 
 
@@ -85,11 +94,38 @@ header {
 main #jumbotron img {
   width: 230px;
 }
+/* end jumbotron*/
+
+/* portfolio */
+main #portfolio .card-cst .overlay {
+  display: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(26, 188, 156, 0.6);
+}
+
+main #portfolio .card-cst .overlay i {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  color: white;
+}
+
+main #portfolio .card-cst:hover .overlay {
+  display: block;
+}
+
+/* end portfolio */
 
 
-/* end jumbotron */
 
+/* end MAIN */
 
+/* FOOTER */
 footer .footer-top {
   background-color: var(--dark-blue);
 }
@@ -98,6 +134,8 @@ footer .footer-bottom {
   background-color: var(--dark-gray);
   height: 110px;
 }
+/* end FOOTER */
+
 
 
 /* MEDIA QUERY */
@@ -106,6 +144,11 @@ footer .footer-bottom {
   h1 {
     font-size: 3.5rem;
   }
+
+  h2 {
+    font-size: 3rem;
+  }
+
 
   main #jumbotron span {
     font-size: 1.5rem;
