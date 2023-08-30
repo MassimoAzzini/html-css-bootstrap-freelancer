@@ -34,7 +34,7 @@ h1 {
   position: absolute;
   top: 50%;
   left: calc(50% + 50px);
-  width: 10%;
+  width: 15%;
   height: 3px;
 }
 
@@ -43,7 +43,7 @@ h1 {
   position: absolute;
   top: 50%;
   right: calc(50% + 50px);
-  width: 10%;
+  width: 15%;
   height: 3px;
 } */
 
@@ -97,4 +97,18 @@ footer .footer-top {
 footer .footer-bottom {
   background-color: var(--dark-gray);
   height: 110px;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width:768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  main #jumbotron span {
+    font-size: 1.5rem;
+  }
+
 }
