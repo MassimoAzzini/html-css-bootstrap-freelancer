@@ -1,7 +1,7 @@
 :root {
   --dark-gray: #2c3e50;
   --dark-blue: #3a546d;
-  --acquamarine: #1abc9c;
+  --green: #1abc9c;
 }
 
 .debug {
@@ -10,27 +10,85 @@
   background-color: rgba(255, 0, 0, 0.2);
 }
 
+.bg-green {
+  background-color: var(--green);
+}
+
+.container-cst {
+  width: 60%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* star */
+.star i {
+  font-size: 1.5rem;
+}
+
+/* .star::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 50px);
+  width: 10%;
+  height: 3px;
+}
+
+.star::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(50% + 50px);
+  width: 10%;
+  height: 3px;
+} */
+
+.line-star {
+  position: absolute;
+  top: 50%;
+  width: 15%;
+  height: 3px;
+}
+
+.line-star.before {
+  right: calc(50% + 20px);
+}
+
+.line-star.after {
+  left: calc(50% + 20px);
+}
+
+#jumbotron .line-star,
+#about .line-star {
+  background-color: white;
+}
+
+#portfolio .line-star,
+#contact-me .line-star {
+  background-color: var(--dark-gray);
+}
+/* end star */
+
+
+/* HEADER AND NAV */
 header {
   height: 90px;
   background-color: var(--dark-gray);
 }
 
-main section:nth-child(odd) {
-  background-color: var(--acquamarine);
-  color: white;
+/* MAIN */
+/* jumbotron */
+main #jumbotron img {
+  width: 230px;
 }
 
-.container-jumbotron {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
 
-.container-cst {
-  width: 70%;
-  max-width: 980px;
-  margin: 0 auto;
-}
+/* end jumbotron */
+
 
 footer .footer-top {
   background-color: var(--dark-blue);
