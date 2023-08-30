@@ -17,15 +17,38 @@
   <title>Bootstrap Freelancer</title>
 </head>
 <body>
-  <header class="text-white">
-    <div class="container h-100">
-      <div class="row h-100 d-flex align-items-center row-cols-2">
+  <header class="d-flex align-items-center w-100 position-fixed z-3">
+    <div class="container">
+      <!-- <div class="row h-100 d-flex align-items-center row-cols-2">
         <div class="col">START BOOSTRAP</div>
         <div class="col text-end">
-          <div class="d-md-none">ICON</div>
+          <div class="d-md-none"><i class="fa-solid fa-bars"></i></div>
           <nav class="d-none d-md-block">PORTFOLIO ABOUT CONTACT</nav>
         </div>
-      </div>
+      </div> -->
+
+      <nav class="navbar navbar-expand-lg navbar-cst">
+        <div class="container-fluid">
+          <a class="navbar-brand text-uppercase fw-bold" href="#">START BOOTSTRAP</a>
+          <button class="navbar-toggler button-cst" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
     </div>
   </header>
 

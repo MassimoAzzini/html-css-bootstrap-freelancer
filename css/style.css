@@ -69,10 +69,35 @@ h2 {
 header {
   height: 90px;
   background-color: var(--dark-gray);
+  top: 0;
+  right: 0;
 }
+
+/* navbar */
+.navbar-cst {
+  color: white;
+}
+
+.navbar-cst a {
+  color: white;
+}
+
+.navbar-cst a:hover {
+  color: var(--green);
+}
+
+.navbar-cst .button-cst {
+  border-color: white;
+}
+/* end navbar */
+/* end HEADER AND NAV */
 
 
 /* MAIN */
+main {
+  margin-top: 90px;
+}
+
 /* jumbotron */
 main #jumbotron img {
   width: 230px;
@@ -104,7 +129,7 @@ main #portfolio .card-cst:hover .overlay {
 /* end portfolio */
 
 /* contact-me */
-.input-cst {
+#contact.me .input-cst {
   border-top: none;
   border-left: none;
   border-right: none;
@@ -112,19 +137,19 @@ main #portfolio .card-cst:hover .overlay {
   padding-left: 0;
 }
 
-.input-cst::placeholder {
+#contact.me .input-cst::placeholder {
   color: var(--dark-gray);
   font-size: 1.1rem;
 }
 
-.button-cst {
+#contact.me .button-cst {
   background-color: var(--green);
   color: white;
   font-size: 1.2rem;
   border: none;
 }
 
-.button-cst:hover {
+#contact.me .button-cst:hover {
   color: white;
   background-color: rgba(6, 148, 120, 0.8);
 }
@@ -171,7 +196,8 @@ footer .footer-bottom {
     font-size: 3rem;
   }
 
-  main #jumbotron span {
+  main #jumbotron span,
+  header nav.navbar-cst a.fw-bold {
     font-size: 1.5rem;
   }
 
