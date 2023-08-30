@@ -33,24 +33,6 @@ h2 {
   font-size: 1.5rem;
 }
 
-/* .star::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: calc(50% + 50px);
-  width: 15%;
-  height: 3px;
-}
-
-.star::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: calc(50% + 50px);
-  width: 15%;
-  height: 3px;
-} */
-
 .line-star {
   position: absolute;
   top: 50%;
@@ -59,11 +41,11 @@ h2 {
 }
 
 .line-star.before {
-  right: calc(50% + 20px);
+  right: 54%;
 }
 
 .line-star.after {
-  left: calc(50% + 20px);
+  left: 54%;
 }
 
 #jumbotron .line-star,
@@ -88,6 +70,7 @@ header {
   height: 90px;
   background-color: var(--dark-gray);
 }
+
 
 /* MAIN */
 /* jumbotron */
@@ -130,33 +113,48 @@ main #portfolio .card-cst:hover .overlay {
 }
 
 .input-cst::placeholder {
-  color: black;
+  color: var(--dark-gray);
+  font-size: 1.1rem;
 }
 
 .button-cst {
   background-color: var(--green);
+  color: white;
+  font-size: 1.2rem;
   border: none;
 }
 
 .button-cst:hover {
-  background-color: rgb(16, 140, 99);
-
+  color: white;
+  background-color: rgba(6, 148, 120, 0.8);
 }
-
 /* end contact-me */
 
-
-
 /* end MAIN */
+
 
 /* FOOTER */
 footer .footer-top {
   background-color: var(--dark-blue);
+  color: white;
+}
+
+footer .footer-top ul i {
+  color: white;
+  font-size: 1.2rem;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+footer .footer-top .col p a {
+  color: var(--green);
 }
 
 footer .footer-bottom {
   background-color: var(--dark-gray);
   height: 110px;
+  color: white;
 }
 /* end FOOTER */
 
@@ -173,9 +171,12 @@ footer .footer-bottom {
     font-size: 3rem;
   }
 
-
   main #jumbotron span {
     font-size: 1.5rem;
+  }
+
+  footer .footer-top .col span:first-child {
+    font-size: 1.3rem;
   }
 
 }
